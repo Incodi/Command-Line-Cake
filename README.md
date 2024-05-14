@@ -1,2 +1,4 @@
 # Command-Line-Cake
-make a simple hypothetical cake with command line.
+Make a simple hypothetical cake with command line.
+
+In the given folder, cakedir, there are directions showing how to play the game.
