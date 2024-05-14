@@ -1,0 +1,61 @@
+
+Places needed:
+mixing-bowl1 mixing-bowl2 cake-pan oven table
+
+Ingredients needed:
+grease flour sugar baking-powder baking-soda salt
+butter eggs buttermilk vanilla-extract
+
+Optional:
+frosting sprinkles fruit
+
+Copy & paste:
+grease.txt flour.txt sugar.txt 
+baking-powder.txt baking-soda.txt salt.txt
+butter.txt eggs.txt buttermilk.txt 
+vanilla-extract.txt
+frosting.txt sprinkles.txt fruit.txt
+
+Directions:
+1. Put cakedir in Desktop and set the working directory to cakedir.
+2. Get the necessary places.
+3. Get the ingredients.
+4. Put flour, sugar, baking powder, baking soda, and salt into mixing bowl 1.
+5. Put butter, eggs, buttermilk, and vanilla extract into mixing bowl 2.
+6. Move contents of mixing bowl 2 into mixing bowl 1.
+7. Move contents of mixing bowl 1 into cake pan.
+8. Move cake pan into the oven.
+9. Move cake pan out of the oven to the table.
+10. Put optionals in cake pan.
+
+Solution:
+
+1. % cd ~/Desktop/cakedir/
+
+2. % mkdir mixing-bowl1 mixing-bowl2 cake-pan oven table
+
+3. % touch grease.txt flour.txt sugar.txt baking-powder.txt baking-soda.txt salt.txt
+
+% touch butter.txt eggs.txt buttermilk.txt vanilla-extract.txt
+
+% touch frosting.txt sprinkles.txt fruit.txt
+
+4. % mv grease.txt flour.txt sugar.txt mixing-bowl1/
+
+% mv baking-powder.txt baking-soda.txt salt.txt mixing-bowl1/
+
+5. % mv butter.txt eggs.txt buttermilk.txt mixing-bowl2/
+
+% mv vanilla-extract.txt mixing-bowl2/
+
+6. % mv mixing-bowl2/* mixing-bowl1/
+
+7. % mv mixing-bowl1/* cake-pan/
+
+8. % mv cake-pan oven/
+
+9. % mv oven/cake-pan/ table/
+
+10. % mv frosting.txt sprinkles.txt fruit.txt table/cake-pan/
+
+
